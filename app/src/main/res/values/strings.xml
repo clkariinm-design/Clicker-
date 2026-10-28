@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Aura Auto Clicker</string>
+    <string name="accessibility_service_description">Aura Auto Clicker utilizes the Accessibility Service API to simulate user clicks, double clicks, long presses, drags, and multi-step automated swipes seamlessly across selected coordinates according to your customized workflows and profiles.</string>
+    <string name="accessibility_service_label">Aura Auto Clicker Automation Engine</string>
+</resources>
