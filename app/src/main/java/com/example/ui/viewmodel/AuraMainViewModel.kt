@@ -69,7 +69,7 @@ class AuraMainViewModel : ViewModel() {
 
     // Settings flows
     val themeMode = settingsRepository.themeMode
-        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), "DARK")
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), "LIGHT")
 
     val clickSound = settingsRepository.clickSound
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), true)
