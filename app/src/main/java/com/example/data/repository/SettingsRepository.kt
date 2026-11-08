@@ -34,7 +34,7 @@ class SettingsRepository(private val context: Context) {
     }
 
     val themeMode: Flow<String> = context.dataStore.data.map { prefs ->
-        prefs[Keys.THEME_MODE] ?: "DARK"
+        prefs[Keys.THEME_MODE] ?: "LIGHT"
     }
 
     val clickSound: Flow<Boolean> = context.dataStore.data.map { prefs ->
@@ -54,7 +54,7 @@ class SettingsRepository(private val context: Context) {
     }
 
     val rippleColor: Flow<Int> = context.dataStore.data.map { prefs ->
-        prefs[Keys.RIPPLE_COLOR] ?: 0xFF00E5FF.toInt()
+        prefs[Keys.RIPPLE_COLOR] ?: 0xFF1976D2.toInt()
     }
 
     val language: Flow<String> = context.dataStore.data.map { prefs ->
