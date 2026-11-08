@@ -258,15 +258,11 @@ fun SettingsScreen(
                     )
                 }
 
-                Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    listOf("English", "Spanish", "German", "Japanese").forEach { lang ->
-                        FilterChip(
-                            selected = language == lang,
-                            onClick = { viewModel.updateSettings(lang = lang) },
-                            label = { Text(lang, style = MaterialTheme.typography.labelSmall) }
-                        )
-                    }
-                }
+                Text(
+                    text = "English",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
             }
         }
 
@@ -287,13 +283,13 @@ fun SettingsScreen(
                 }
 
                 Text(
-                    text = "Aura uses Android's Foreground Service architecture to minimize battery drain (<1% per hour). To prevent aggressive OEM battery managers (MIUI, Samsung OneUI, ColorOS) from sleeping clicks in the background:",
+                    text = "Clicker uses Android's Foreground Service architecture to minimize battery drain (<1% per hour). To prevent aggressive OEM battery managers (MIUI, Samsung OneUI, ColorOS) from sleeping clicks in the background:",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
 
                 Text(
-                    text = "1. Set Aura battery usage to 'Unrestricted'\n2. Allow background activity and autostart\n3. Lock Aura in recent apps list if long sessions are needed",
+                    text = "1. Set Clicker battery usage to 'Unrestricted'\n2. Allow background activity and autostart\n3. Lock Aura in recent apps list if long sessions are needed",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurface
                 )
